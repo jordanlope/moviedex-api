@@ -5,7 +5,6 @@ const cors = require('cors')
 const helmet = require('helmet')
 const MOVIES = require('./movies-data-small.json')
 
-console.log(process.env.API_TOKEN)
 
 const app = express()
 
@@ -53,10 +52,10 @@ function handleGetMovie(req, res) {
 
 app.get('/movies', handleGetMovie)
 
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 
 app.listen(PORT, () => {
-    console.log(`Server listening at http://localhost:${PORT}`)
+    console.log(`Server is running`)
 })
 
 module.exports = app

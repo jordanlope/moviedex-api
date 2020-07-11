@@ -9,19 +9,22 @@
     "dev": "nodemon server.js"
   },
   "keywords": [],
+  "engines": {
+    "node": "13.11.0"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "supertest": "^4.0.2",
+    "dotenv": "^8.2.0",
     "chai": "^4.2.0",
     "express": "^4.17.1",
     "mocha": "^8.0.1",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4",
-    "supertest": "^4.0.2"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
     "helmet": "^3.23.3"
   }
 }
